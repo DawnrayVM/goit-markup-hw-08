@@ -1,0 +1,116 @@
+.accent {
+  color: $main-accent;
+}
+
+.footer {
+  background-color: $secondary-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--logo {
+    color: $pure-white-color;
+  }
+}
+
+.adress-container {
+  color: $pure-white-color;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.address {
+  font-weight: 400;
+  font-style: normal;
+  color: $pure-white-color;
+  margin-top: 20px;
+
+  &__text {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: $footer-text-color;
+    margin-top: 9px;
+
+    &:hover,
+    &:focus {
+      color: $main-accent;
+      text-decoration: underline;
+    }
+  }
+}
+
+.subscribe {
+  margin-left: 50px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $pure-white-color;
+    margin-top: 15px;
+  }
+}
+
+.subscribe-form {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $pure-white-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      border-color: $pure-white-color;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 12px;
+    padding: 10px 29px;
+    width: 200px;
+    height: 50px;
+    background: $main-accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $pure-white-color;
+
+    &--icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+    }
+  }
+}

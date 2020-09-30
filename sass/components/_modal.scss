@@ -1,0 +1,185 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  padding: 40px;
+  z-index: 101;
+  animation: backIn 2s linear 0s 1;
+  text-align: center;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 12px;
+  }
+}
+
+@keyframes backIn {
+  0% {
+    transform: scale(0.1);
+    transform: translate(0, -1200px);
+    opacity: 0.7;
+  }
+
+  70% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.modal-btn {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $pure-white-color;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  top: 8px;
+  right: 8px;
+
+  &__icon {
+    width: 11px;
+    height: 11px;
+
+    .modal-btn:hover & {
+      fill: $main-accent;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  &__title {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  &__input {
+    display: block;
+    position: relative;
+    padding: 12px 35px;
+    width: 100%;
+    font-size: 13px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline-color: $main-accent;
+      fill: $main-accent;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 3%;
+    top: 55%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-field__input:focus + & {
+      outline-color: $main-accent;
+      fill: $main-accent;
+    }
+  }
+}
+
+.form-textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline-color: $main-accent;
+  }
+}
+
+.checkbox {
+  position: relative;
+  margin-right: 12px;
+  text-align: right;
+
+  &__checked {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    left: 13px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    user-select: none;
+  }
+
+  &__input:checked + .checkbox__checked {
+    background-color: $main-accent;
+    border-color: $main-accent;
+    background-image: url(../images/checkbox-sign.svg);
+    background-position: center;
+  }
+}
+
+.submit--btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 55px;
+}

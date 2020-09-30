@@ -1,0 +1,46 @@
+body {
+  color: $secondary-text-color;
+  background-color: $pure-white-color;
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section__title {
+  color: $primary-text-color;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.hero {
+  background-color: #c4c4c4;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/hero-bg.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1600px, 1600px;
+
+  &__container {
+    text-align: center;
+    width: 696px;
+  }
+
+  &__title {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 44px;
+    color: $pure-white-color;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+.btn--hero {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 32px;
+  margin-top: 30px;
+}
