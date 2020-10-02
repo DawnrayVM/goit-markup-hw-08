@@ -1,5 +1,13 @@
+.social-links {
+  &__grid {
+    display: flex;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .social-links__title {
-  margin-top: 15px;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
@@ -7,6 +15,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $pure-white-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 15px;
+  }
 }
 
 .social-links__item {

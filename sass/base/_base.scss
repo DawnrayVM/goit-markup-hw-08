@@ -34,10 +34,16 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: auto;
+  max-width: 1200px;
   padding: 0px 15px 0 15px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) and (min-width: 480px) {
+    width: 480px;
+    // outline: 1px solid teal;
+  }
 }

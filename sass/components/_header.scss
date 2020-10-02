@@ -1,8 +1,19 @@
 .page-header {
+  width: 100%;
   background-color: $pure-white-color;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 
 .main-nav {
@@ -10,6 +21,10 @@
 
   &__list {
     margin-left: 93px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__item:not(:last-child) {
@@ -17,6 +32,7 @@
   }
 
   &__link {
+    display: block;
     text-decoration: none;
     color: $primary-text-color;
     font-weight: 500;
@@ -28,6 +44,19 @@
     &:focus {
       color: $main-accent;
     }
+  }
+}
+
+.open-menu {
+  border-style: none;
+  border: none;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -48,12 +77,24 @@
 }
 
 .header-contacts {
+  // outline: 1px solid tomato;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__link {
+    // outline: 1px solid teal;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     color: $secondary-text-color;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
@@ -62,14 +103,29 @@
       color: $main-accent;
       text-decoration: underline;
     }
-  }
 
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      inline-size: 1.14;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__item {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 
   &__icon {
-    display: inline-block;
+    display: block;
     margin-right: 10px;
     fill: $secondary-text-color;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
@@ -79,4 +135,8 @@
       fill: $main-accent;
     }
   }
+}
+
+.menu-open {
+  display: none;
 }
