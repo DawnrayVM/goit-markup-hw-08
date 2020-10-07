@@ -5,5 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <img
+      style="display: block; width: 100%"
+      srcset="
+       ./images/desktop/igor-dem-270.jpg w270,
+       ./images/mobile/igor-dem-450.jpg w450,
+      ./images/mobile/igor-dem-450@2x.jpg w900
+       "
+      media="(max-width: 360px) w270, (min-width: 768px) w900"
+      sizes="(min-width: 768px) w900, (max-width: 360px) w270"
+      src="./images/desktop/igor-dem-270.jpg"
+      alt="Разраб"
+    />
+  </body>
 </html>

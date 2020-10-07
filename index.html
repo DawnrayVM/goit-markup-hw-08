@@ -120,7 +120,18 @@
           <ul class="team-grid list">
             <li class="team-grid__item">
               <div class="team-grid__card">
-                <img src="./images/igor-dem.jpg" alt="Игорь Демьяненко" width="170" />
+                <picture>
+                  <source
+                    srcset="
+                                ./images/desktop/igor-dem-270.jpg w270,
+                                ./images/mobile/igor-dem-450.jpg w450,
+                                ./images/mobile/igor-dem-450@2x.jpg w900
+                                "
+                    media="(max-width: 500px)"
+                    sizes="(min-width: 1200px) 900px, (min-width: 800px) 90vw, 100vw"
+                  />
+                  <img src="./images/mobile/igor-dem-450.jpg" alt="" />
+                </picture>
                 <h3 class="team-grid__name">Игорь Демьяненко</h3>
                 <p class="team-grid__position">Product Designer</p>
                 <div class="team__social-container">
