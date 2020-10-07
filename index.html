@@ -121,16 +121,10 @@
             <li class="team-grid__item">
               <div class="team-grid__card">
                 <picture>
-                  <source
-                    srcset="
-                                ./images/desktop/igor-dem-270.jpg w270,
-                                ./images/mobile/igor-dem-450.jpg w450,
-                                ./images/mobile/igor-dem-450@2x.jpg w900
-                                "
-                    media="(max-width: 500px)"
-                    sizes="(min-width: 1200px) 900px, (min-width: 800px) 90vw, 100vw"
-                  />
-                  <img src="./images/mobile/igor-dem-450.jpg" alt="" />
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/igor-dem-270.jpg 1x, ./images/desktop/igor-dem-270@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/igor-dem-354.jpg 1x, ./images/tablet/igor-dem-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/igor-dem-450.jpg 1х, ./images/mobile/igor-dem-450@2x.4jpg 2x" />
+                  <img src="./images/desktop/igor-dem-270.jpg" alt="Игорь Демьяненко" />
                 </picture>
                 <h3 class="team-grid__name">Игорь Демьяненко</h3>
                 <p class="team-grid__position">Product Designer</p>
@@ -170,7 +164,7 @@
             </li>
             <li class="team-grid__item">
               <div class="team-grid__card">
-                <img src="./images/olga-repina.jpg" alt="Ольга Репина" width="170" />
+                <img src="./images/olga-repina.jp" alt="Ольга Репина" width="170" />
                 <h3 class="team-grid__name">Ольга Репина</h3>
                 <p class="team-grid__position">Frontend Developer</p>
                 <div class="team__social-container">
@@ -209,7 +203,7 @@
             </li>
             <li class="team-grid__item">
               <div class="team-grid__card">
-                <img src="./images/nikolay-tarasov.jpg" alt="Николай Тарасов" width="170" />
+                <img src="./images/nikolay-tarasov.jp" alt="Николай Тарасов" width="170" />
                 <h3 class="team-grid__name">Николай Тарасов</h3>
                 <p class="team-grid__position">Marketing</p>
                 <div class="team__social-container">
@@ -248,7 +242,7 @@
             </li>
             <li class="team-grid__item">
               <div class="team-grid__card">
-                <img src="./images/mihail-ermakov.jpg" alt="Михаил Ермаков" width="170" />
+                <img src="./images/mihail-ermakov.jp" alt="Михаил Ермаков" width="170" />
                 <h3 class="team-grid__name">Михаил Ермаков</h3>
                 <p class="team-grid__position">UI Designer</p>
                 <div class="team__social-container">
