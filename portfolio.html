@@ -55,12 +55,17 @@
         <button type="button" class="btn btn--portfolio">Дизайн</button>
         <button type="button" class="btn btn--portfolio">Маркетинг</button>
       </div>
-      <div class="our-work-container container">
-        <ul class="card-grid flexbox list">
+      <div class="our-work-container">
+        <ul class="card-grid list">
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/techcrack.jpg" alt="Экран ноутбука" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/techcrack-370.jpg 1x, ./images/desktop/techcrack-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/techcrack-354.jpg 1x, ./images/tablet/techcrack-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/techcrack-450.jpg 1x, ./images/mobile/techcrack-450@2x.jpg 2x" />
+                  <img src="./images/mobile/techcrack-450.jpg" alt="Экран ноутбука" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -78,7 +83,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/new-orlean.jpg" alt="Баскетболисты" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/new-orlean-370.jpg 1x, ./images/desktop/new-orlean-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/new-orlean-354.jpg 1x, ./images/tablet/new-orlean-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/new-orlean-450.jpg 1x, ./images/mobile/new-orlean-450@2x.jpg 2x" />
+                  <img src="./images/mobile/new-orlean-450.jpg" alt="Баскетболисты" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -86,7 +96,7 @@
                   </p>
                 </div>
                 <div class="card-tag">
-                  <h2 class="card-tag__title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="card-tag__title">Постер New Orlean vs Golden</h2>
                   <p class="card-tag__text">Дизайн</p>
                 </div>
                 <div class="card-grid__wrapper"></div>
@@ -96,7 +106,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/seafood.jpg" alt="Рыба" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/seafood-370.jpg 1x, ./images/desktop/seafood-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/seafood-354.jpg 1x, ./images/tablet/seafood-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/seafood-450.jpg 1x, ./images/mobile/seafood-450@2x.jpg 2x" />
+                  <img src="./images/mobile/seafood-450.jpg" alt="Рыба" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt illum, magnam nemo maxime reiciendis velit voluptates ratione temporibus sapiente?
@@ -114,7 +129,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/project-prime.jpg" alt="Наушники" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/project-prime-370.jpg 1x, ./images/desktop/project-prime-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/project-prime-354.jpg 1x, ./images/tablet/project-prime-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/project-prime-450.jpg 1x, ./images/mobile/project-prime-450@2x.jpg 2x" />
+                  <img src="./images/mobile/project-prime-450.jpg" alt="Наушники" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequatur reprehenderit fuga tempora ab rerum, qui porro non reiciendis, dolore ipsum expedita
@@ -132,8 +152,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/project-boxes.jpg" alt="Коробки" width="370" />
-
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/project-boxes-370.jpg 1x, ./images/desktop/project-boxes-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/project-boxes-354.jpg 1x, ./images/tablet/project-boxes-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/project-boxes-450.jpg 1x, ./images/mobile/project-boxes-450@2x.jpg 2x" />
+                  <img src="./images/mobile/project-boxes-450.jpg" alt="Коробки" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat repellat voluptas placeat necessitatibus ad debitis dolor, incidunt ea et impedit! Quis,
@@ -151,7 +175,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/inspiration.jpg" alt="Экран iMac" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/inspiration-370.jpg 1x, ./images/desktop/inspiration-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/inspiration-354.jpg 1x, ./images/tablet/inspiration-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/inspiration-450.jpg 1x, ./images/mobile/inspiration-450@2x.jpg 2x" />
+                  <img src="./images/mobile/inspiration-450.jpg" alt="Экран iMac" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
@@ -166,7 +195,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/limited-edition.jpg" alt="Книга" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/limited-edition-370.jpg 1x, ./images/desktop/limited-edition-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/limited-edition-354.jpg 1x, ./images/tablet/limited-edition-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/limited-edition-450.jpg 1x, ./images/mobile/limited-edition-450@2x.jpg 2x" />
+                  <img src="./images/mobile/limited-edition-450.jpg" alt="Книга" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta incidunt doloremque accusantium voluptas, ut eius ratione aperiam. Est, nostrum?</p>
                 </div>
@@ -181,7 +215,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/project-lab.jpg" alt="Lab el Tag" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/project-lab-370.jpg 1x, ./images/desktop/project-lab-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/project-lab-354.jpg 1x, ./images/tablet/project-lab-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/project-lab-450.jpg 1x, ./images/mobile/project-lab-450@2x.jpg 2x" />
+                  <img src="./images/mobile/project-lab-450.jpg" alt="Lab el Tag" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, excepturi.</p>
                 </div>
@@ -196,7 +235,12 @@
           <li class="card-grid__item">
             <div class="card-grid__container">
               <a href="">
-                <img src="./images/growing-business.jpg" alt="Ноутбук" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/desktop/growing-business-370.jpg 1x, ./images/desktop/growing-business-370@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/tablet/growing-business-354.jpg 1x, ./images/tablet/growing-business-354@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/mobile/growing-business-450.jpg 1x, ./images/mobile/growing-business-450@2x.jpg 2x" />
+                  <img src="./images/mobile/growing-business-450.jpg" alt="Ноутбук" />
+                </picture>
                 <div class="card-grid__img-overlay">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod culpa distinctio nam voluptas id!</p>
                 </div>
