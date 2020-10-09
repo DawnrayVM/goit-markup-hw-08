@@ -596,9 +596,7 @@ a {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {
@@ -640,6 +638,12 @@ a {
 @media screen and (min-width: 768px) {
   .social-links {
     margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-links {
+    margin-right: auto;
   }
 }
 
@@ -1587,8 +1591,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .adress-container {
-    margin-right: 70px;
     width: 50%;
+    margin-right: auto;
   }
 }
 
